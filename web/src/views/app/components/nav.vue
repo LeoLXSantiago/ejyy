@@ -11,7 +11,7 @@
         </div>
 
         <Menu
-            :active-name="actievMenu"
+            :active-name="activeMenu"
             :open-names="openSubmenu"
             width="auto"
             :accordion="settings.siderAccordion"
@@ -207,7 +207,7 @@ export default {
         }
     },
     computed: {
-        actievMenu() {
+        activeMenu() {
             return this.$route.path;
         },
         openSubmenu() {
